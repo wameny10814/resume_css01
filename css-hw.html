@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="csspc.html">
+    <style>
+        * {
+
+            box-sizing: border-box;
+            font-family: Avenir, 'PingFang TC', '微軟正黑體', sans-serif;
+            /* outline: 1px red solid; */
+        }
+
+        .body {
+            padding: 0;
+            font-size: 1em;
+            margin: 0;
+            background-color: #fff;
+            color: #1a1a1a;
+            box-sizing: border-box;
+
+        }
+
+        .margin_top {
+            margin-top: 24px;
+
+
+        }
+
+        .text_align_center {
+            text-align: center;
+        }
+
+        .justify-content {
+            justify-content: space-between;
+        }
+
+        .w_3333 {
+            width: 33.33%;
+        }
+
+        .text_align_left {
+            text-align: left;
+        }
+
+
+        @media (min-width:767px) {
+            .container {
+                margin-left: 102px;
+                margin: 0 80px 0 182px;
+            }
+
+
+
+            .header {
+                position: fixed;
+                height: 100%;
+                border-right: 1px solid gray;
+               
+            }
+
+            .header .container {
+                margin: 0;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0;
+                position: relative;
+
+            }
+
+            .header .container img {
+                width: 100%;
+            }
+            .header .hamburger{
+                position: absolute;
+                top: 50%;
+            }
+
+            .login_img {
+                margin-bottom: 30%;
+            }
+
+            .title_eng01 {
+                color: transparent;
+                -webkit-text-stroke: 1.5px rgb(26, 26, 26);
+                font-size: 42px;
+                height: 56px;
+                text-align: center;
+            }
+
+            .title_eng02 {
+                height: 20px;
+                overflow: hidden;
+                transform: translateY(-100%);
+                text-align: center;
+
+            }
+
+            .title_eng02h2 {
+                color: transparent;
+                -webkit-text-stroke: 1.5px rgb(26, 26, 26);
+                font-size: 42px;
+                transform: translateY(-70%);
+
+            }
+
+            .title_cn {
+                font-weight: 500;
+                font-size: 20px;
+                letter-spacing: 2px;
+                transform: translateY(-100%);
+                text-align: left;
+                padding: 0 0 0 8%;
+            }
+
+            .promotion {
+                margin-left: 102px;
+                padding: 3rem 80px;
+                
+            }
+
+            .banner {
+                background-image: url(./images/banner.jpeg);
+                width: 75%;
+                height: 630px;
+                background-size: contain;
+                clip-path: polygon(0% 0%, 100% 8.27%, 100% 91.03%, 0% 100%);
+                position: relative;
+            }
+
+            .promotionbox {
+                background-color: rgba(240, 240, 240, 0.95);
+                position: absolute;
+                right: 80px;
+                bottom: 10px;
+                width: 460px;
+                height: 340px;
+                padding: 5%;
+                clip-path: polygon(0% 0%, 100% 8.27%, 100% 91.03%, 0% 100%);
+                text-align: center;
+
+
+            }
+
+
+            .button_left {
+                display: none;
+            }
+
+            .button_right {
+                display: none;
+            }
+
+            .seemore {
+                width: 50px;
+                position: relative;
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                padding: 3%;
+                position: absolute;
+                left: 70%;
+                top: 70%;
+                border: 1px solid black;
+            }
+
+            .promotionbox a {
+                text-decoration: none;
+                color: rgb(26, 26, 26);
+                text-align: center;
+            }
+
+            .promotionbox_text span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 29px;
+                letter-spacing: 1.5px;
+
+            }
+
+            .promotionbox_text h3 {
+                font-size: 26px;
+                font-weight: 500;
+                line-height: 36px;
+                letter-spacing: 1px;
+            }
+
+            .promotion .container {
+                position: relative;
+            }
+
+            .promotion .title {
+                position: absolute;
+                right: -8%;
+                transform-origin: right top;
+                transform: rotate(90deg) translate(100%, 0px);
+
+
+            }
+
+            .promotion .title_cn {
+                padding: 0;
+
+            }
+
+            .transform {
+                transform: rotate(270deg);
+                display: inline-block;
+            }
+
+            .promotion_linksbox {
+                display: flex;
+
+
+            }
+
+            .promotion_linksbox .promotion_links {
+                width: 10%;
+                padding: 1%;
+                border-top: 2px solid black;
+            }
+
+            .promotion_links a {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 18px;
+                margin: 0px 0px 8px;
+                color: rgb(168, 168, 168);
+                text-align: left;
+                text-decoration: none;
+
+            }
+            .membership{
+                margin-top: 5rem;
+            }
+
+            .membership .container {
+                position: relative;
+            }
+
+            .membership .title {
+                text-align: left;
+            }
+
+            .membership .title .title_eng01 {
+                text-align: left;
+            }
+
+            .membership .title .title_eng02 {
+
+                text-align: left;
+            }
+
+            .backimg {
+                background-image: url(./images/membership.jpeg);
+                height: 320px;
+
+                background-size: contain;
+                background-repeat: no-repeat;
+                clip-path: polygon(0% 0%, 24.16% 12.84%, 100% 1.38%, 100% 87.16%, 84.79% 100%, 0% 88.48%);
+            }
+
+            .membership .content .imgbox {
+
+                float: right;
+                width: 50%;
+                position: relative;
+
+            }
+
+            .membership_text {
+                width: 50%;
+            }
+
+            .membership_text_svg {
+                clear: both;
+            }
+
+            .buttonleft {
+                position: absolute;
+                top: calc(50% - 40px);
+                left: -10%;
+                background-color: #CB333B;
+                padding: 26px 32px 22px;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                line-height: 25px;
+                font-size: 15px;
+            }
+
+            .buttonleft a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .buttontop {
+                background-color: #CB333B;
+                padding: 26px 32px 22px;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                line-height: 25px;
+                font-size: 15px;
+                position: absolute;
+                right: 10%;
+                top: -10%;
+
+            }
+
+            .buttontop a {
+                text-decoration: none;
+                color: white;
+
+            }
+
+            .buttonright {
+                background-color: #CB333B;
+                padding: 26px 32px 22px;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                line-height: 25px;
+                font-size: 15px;
+                position: absolute;
+                left: calc(50% + 20px);
+                bottom: -10%;
+
+            }
+
+            .buttonright a {
+                text-decoration: none;
+                color: white;
+
+            }
+
+            .membership_text {
+                position: relative;
+                height: 320px;
+                margin-bottom: 10%;
+            }
+
+            .membership_text h3 {
+                font-size: 26px;
+                color: rgb(26, 26, 26);
+                letter-spacing: 1px;
+                line-height: 36px;
+                font-weight: 500;
+                margin: 0px;
+            }
+
+            .membership_text p {
+                font-size: 16px;
+                color: rgb(26, 26, 26);
+                margin: 16px 0px 44px;
+                font-weight: 400;
+                width: 100%;
+                line-height: 28px;
+                padding: 0 3% 0 0;
+            }
+
+            .membership_text_seemore {
+                width: 50px;
+
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+
+                padding: 3%;
+                position: absolute;
+                left: 0%;
+                bottom: 30%;
+                border: 1px solid black;
+
+            }
+
+            .membership_text_seemore .seemore {
+                clear: both;
+
+            }
+
+            .joinnow {
+                position: absolute;
+                bottom: -20%;
+                white-space: nowrap;
+                width: 104%;
+                overflow: hidden;
+                
+            }
+
+            .joinnow a {
+                -webkit-text-stroke: 1px rgb(0, 0, 0);
+                text-transform: uppercase;
+                font-size: 2rem;
+                letter-spacing: 2px;
+                line-height: 1;
+                font-weight: 900;
+                color: rgb(255, 255, 255);
+                margin: 0px 0.1rem 0px 0px;
+                /* height: 72px; */
+                text-decoration: none;
+                white-space: nowrap;
+                
+                
+
+            }
+            .programs{
+                background-color: rgb(246, 246, 246);
+                margin-left: 102px;
+                
+            }
+
+            .programs .container {
+                margin-top: 10%;
+                margin-left: 102px;
+
+            }
+
+            .programs_bck {
+                margin-left: 102px;
+                background-color: white;
+                 /* width: 100%; */
+                height: 30px;
+                clip-path: polygon(0 0, 50% 100%, 120% 0);
+                margin-bottom: 3rem;
+
+            }
+
+            .programs .title .title_eng01 {
+                text-align: left;
+            }
+
+            .programs .title_eng02h2 {
+                text-align: left;
+            }
+
+            .programs .title_cn {
+                text-align: left;
+                padding: 0;
+            }
+
+            .programs .content {
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+
+            .programs .content .card {
+                display: flex;
+                flex-direction: column;
+                width: 33%;
+                padding-right: 1%;
+                padding-top: 2%;
+                position: relative;
+            }
+
+            .programs_pic {
+                clip-path: polygon(0% 0%, 20.83% 11.11%, 100% 0%, 100% 88.89%, 79.17% 100%, 0% 88.89%);
+                position: relative;
+            }
+
+            .programs_img {
+                height: 100%;
+                width: 100%;
+
+            }
+
+            .btn_heart {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                color: white;
+                padding: 3px;
+            }
+            .btn_heart img{
+                width: 30px;
+                height: 30px;
+            }
+
+            .program_festival_button {
+                background-color: #CB333B;
+                padding: 22px 5px;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                line-height: 25px;
+                font-size: 15px;
+                position: absolute;
+
+                top: 40%;
+                display: flex;
+                align-items: center;
+            }
+
+            .program_festival_button a {
+                text-decoration: none;
+                color: white;
+            }
+
+
+            .card_text .schedule {
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 20px;
+
+                color: rgb(26, 26, 26);
+
+
+            }
+
+            .card_text .program_name {
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 32px;
+                margin: 8px 0px 0px;
+                word-break: break-word;
+                color: rgb(26, 26, 26);
+            }
+
+            .card_text .program_festival {
+                font-size: 13px;
+                letter-spacing: 1px;
+                line-height: 19px;
+                font-weight: 400;
+                white-space: pre-line;
+                color: rgb(168, 168, 168);
+            }
+
+            .program_morebox {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5rem;
+            }
+
+            .program_seemore {
+
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                padding: 5%;
+                border: 1px solid black;
+                margin-left: 15px;
+
+            }
+
+            .shows {
+                margin: auto;
+                margin-top: 5rem;
+
+            }
+
+            .shows .container {
+                display: flex;
+                flex-direction: row;
+                
+
+            }
+
+            .shows .shows_imgbox {
+                height: 300px;
+                width: 100%;
+            }
+
+            .shows .shows_imgbox img {
+                height: 100%;
+            }
+            .contact {
+                margin-top: 5rem;
+            }
+         
+
+
+            .contact .links {
+                display: none;
+               
+            }
+
+            .contact .digitalpaper {
+                min-width: 530px;
+                display: flex;
+                align-items: center;
+            }
+
+            .contact .digitalpaper h4 {
+                margin-right: 1rem;
+            }
+
+            .digitakpaper_mail input {
+                border: none;
+                border-bottom: 1px solid black;
+
+            }
+
+            .digitakpaper_mail button {
+                background-color: transparent;
+                border: 1px solid black;
+                width: 100px;
+                padding: 1% 8%;
+
+
+            }
+
+            .contact .button_img {
+                display: none;
+            }
+
+            .contact .contactinfo_flexbox {
+                float: left;
+                min-width: 530px;
+                width: fit-content;
+            }
+
+            .contact .contactinfo_flexbox .SNS {
+                float: left;
+                width: 30%;
+                display: flex;
+            }
+
+            .SVGborder {
+                width: 40px;
+                height: 40px;
+                border: 1px solid var(--text);
+                border-radius: 50%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-right: 10%;
+                border: 1px solid black;
+
+            }
+
+            .contactus_info {
+                display: flex;
+            }
+
+            .SVGgroup {
+                display: flex;
+                align-items: center;
+            }
+
+            .contact_lan {
+                display: flex;
+                align-items: center;
+            }
+
+            .contactus {
+                display: flex;
+                width: fit-content;
+            }
+
+            .contact_up_flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+
+
+            .contactus_info {
+                display: flex;
+                align-items: center;
+                width: 100%;
+
+                margin-right: 10%;
+
+            }
+
+            .contactus_info p {
+                margin-right: 20%;
+                width: 100px;
+
+            }
+
+            .contact_lan {
+                width: 100%;
+                margin-right: 20%;
+            }
+
+            .contact_lan p {
+                width: 100px;
+                margin-right: 5%;
+            }
+          
+            .pclinks_position{
+                position: relative;
+                margin-top: 5rem;
+            }
+
+            .pc_links {
+                width: 50%;
+                float: left;
+               position: absolute;
+               left: -10px;
+            }
+
+            .pc_links a {
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 400;
+                color: black;
+                padding-right: 10px;
+                margin: 5px 10px;
+                border-right: 1px solid black;
+                display: inline-block;
+                height: 14px;
+                vertical-align: baseline;
+
+            }
+
+            .botton_img {
+                width: 50%;
+                float: right;
+                margin: 0;
+                
+
+            }
+            .botton_img .container{
+                padding: 0;
+                float: right;
+            }
+
+            .botton_img img {
+                width: 200px;
+                height: 35px;
+
+
+            }
+
+            footer {
+                clear: both;
+               
+                color: white;
+                display: flex;
+                flex-direction: row;
+                height: 100%;
+            }
+            footer .container{
+                background-color: black;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 1rem 1rem;
+                margin-top: 3rem;
+            font-size: 12px;
+            
+            }
+            .footer_flex_left{
+                display: flex;
+            }
+            .footer_flex_left p{
+                margin-right: 1rem;
+            }
+            .footer_flex_left a{
+                text-decoration: none;
+                color: white;
+            }
+            .copyright{
+                display: flex;
+            }
+            .copyright p{
+                margin-left: 1rem; 
+            }
+
+
+
+
+
+
+        }
+
+
+        @media (max-width: 767px) {
+            * {
+                box-sizing: border-box;
+            }
+
+            .container {
+                margin: 0 10%;
+            }
+
+            .header {
+                height: 60px;
+            }
+
+            .header .container {
+                display: flex;
+                justify-content: space-between;
+                height: 60px;
+                /* width: 100%; */
+                padding: 10px 30px;
+                align-items: center;
+
+            }
+
+            .logo img {
+                width: 24px;
+                height: 24px;
+
+            }
+
+            .login {
+                display: flex;
+                width: 100px;
+                justify-content:end;
+
+            }
+
+            .login_img {
+                width: 24px;
+                height: 24px;
+
+            }
+
+            .login_img img {
+                width: 24px;
+                height: 24px;
+            }
+            .hamburger{
+                display: flex;
+                justify-content: end;
+                align-items: center;
+            }
+
+            .seemore {
+                position: absolute;
+                border: 1px solid black;
+            }
+           
+
+            .title_eng01 {
+                margin-top: 24px;
+                color: transparent;
+                -webkit-text-stroke: 1.5px rgb(26, 26, 26);
+                font-size: 42px;
+                height: 56px;
+                text-align: center;
+                display: flex;
+            }
+
+            .title_eng02 {
+                height: 20px;
+                overflow: hidden;
+                transform: translateY(-100%);
+                text-align: center;
+                display: flex;
+                align-items: baseline;
+
+            }
+
+            .title_eng02h2 {
+                color: transparent;
+                -webkit-text-stroke: 1.5px rgb(26, 26, 26);
+                font-size: 42px;
+                transform: translateY(-70%);
+                text-align: center;
+            }
+
+            .title_cn {
+                font-weight: 500;
+                font-size: 20px;
+                letter-spacing: 2px;
+                transform: translateY(-100%);
+                text-align: left;
+                
+            }
+
+            .promotion_info {
+                display: flex;
+                justify-content: space-between;
+
+            }
+            .promotion .title_cn{
+                display: flex;
+                justify-content: left;
+            }
+
+            .promotion_content {
+                width: 100%;
+             
+            }
+
+            .promotion_content .banner {
+                width: 100%;
+                height: 300px;
+                background-image: url(./images/banner.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+             
+            }
+
+            .promotionbox {
+                width: 100%;
+                height: 200px;
+                background-color: rgba(240, 240, 240, 0.95);
+                transform: translateY(-50%);
+                padding: 40px 24px;
+                position: relative;
+            }
+
+            .promotionbox h3 {
+                font-size: 18px;
+                line-height: 28px;
+
+            }
+
+            .button_left {
+                transform: rotate(90deg);
+                width: fit-content;
+                height: fit-content;
+            }
+
+            .button_right {
+                transform: rotate(-90deg);
+                width: fit-content;
+                height: fit-content;
+            }
+
+            .seemore {
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                border: 1xp solid black;
+                padding: 5%;
+                position: absolute;
+                left: 70%;
+                top: 80%;
+            }
+
+            .imgbox {
+                background-image: url(./images/membership.jpeg);
+                height: 158px;
+                background-size: cover;
+                position: relative;
+
+            }
+
+            .buttonleft {
+                position: absolute;
+                top: calc(50% - 40px);
+                left: -10%;
+                background-color: #CB333B;
+                padding: 5% 2%;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 16px;
+            }
+            .promotion_linksbox{
+                display: none;
+            }
+
+            .membership_buttonleft {
+                text-decoration: none;
+                color: #fff;
+
+            }
+
+            .buttontop {
+                position: absolute;
+                right: 10%;
+                top: -20%;
+                background-color: #CB333B;
+                padding: 5% 2%;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 16px;
+
+            }
+
+            .membership_buttontop {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .buttonright {
+                position: absolute;
+                left: calc(50% + 20px);
+                bottom: -10%;
+                background-color: #CB333B;
+                padding: 5% 2%;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 16px;
+
+            }
+
+            .membership_buttonright {
+                text-decoration: none;
+                color: #fff;
+
+            }
+
+            .joinnow {
+                display: flex;
+                justify-content: center;
+                margin: 1rem 0.2rem 0px 0px;
+                height: 3rem;
+                flex-wrap: nowrap;
+                width: 100%;
+                overflow: hidden;
+
+            }
+
+            .joinnow a {
+                -webkit-text-stroke: 1px rgb(0, 0, 0);
+                font-size: 2rem;
+                letter-spacing: 2px;
+                line-height: 1;
+                font-weight: 900;
+                text-decoration: none;
+                color: transparent;
+                margin: 0 1%;
+                white-space: nowrap;
+            }
+
+            .membership_text h3 {
+                font-size: 20px;
+                color: rgb(26, 26, 26);
+                letter-spacing: 1px;
+                line-height: 36px;
+                font-weight: 500;
+                margin: 0px;
+            }
+
+            .membership_text p {
+                font-size: 16px;
+                color: rgb(26, 26, 26);
+                margin: 16px 0px 44px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+
+            .membership_text_svg {
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                padding: 5%;
+                border: 1px solid black;
+            }
+
+            .card {
+                width: 100%;
+                height: 100%;
+                margin-top: 5%;
+            }
+
+            .programs_pic {
+                height: 100%;
+                width: 100%;
+                box-sizing: border-box;
+                position: relative;
+            }
+
+            .btn_heart {
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 3%;
+
+            }
+
+            .btn_hear img {
+                width: 10px;
+                height: 10px;
+            }
+
+            .programs_img {
+                height: 230px;
+                width: 100%;
+                box-sizing: border-box;
+
+
+            }
+
+            .card_text .schedule {
+                font-size: 13px;
+                letter-spacing: 1px;
+                line-height: 19px;
+                font-weight: 400;
+            }
+
+            .program_name {
+                font-weight: 500;
+                line-height: 32px;
+            }
+
+            .program_festival p {
+                font-size: 13px;
+                letter-spacing: 1px;
+                line-height: 19px;
+                font-weight: 400;
+            }
+
+            .program_festival a {
+                text-decoration: none;
+                color: #CB333B;
+            }
+
+            .program_morebox {
+                display: flex;
+                align-items: center;
+
+            }
+
+            .program_seemore {
+                width: 66px;
+                height: 66px;
+                border-radius: 50%;
+                border: 1px solid black;
+                padding: 5%;
+                margin-left: 1%;
+            }
+
+            .shows .container {
+                height: 100%;
+                width: calc(90%-48px);
+                margin-top: 24px;
+            }
+
+            .shows .container img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .digitalpaper {
+                position: relative;
+            }
+
+            .digitakpaper_mail input {
+                width: 200x;
+                border: none;
+                border-bottom: solid 1px black;
+                padding: 1%;
+                margin-right: 5%;
+            }
+
+            .digitakpaper_mail button {
+                width: 80px;
+                height: 40px;
+                background-color: white;
+                border: 1px solid black;
+                position: absolute;
+                right: 0%;
+
+            }
+
+            .contactus {
+                display: flex;
+
+            }
+
+            .SNS {
+                display: flex;
+                margin-top: 24px;
+
+            }
+
+            .SVGborder {
+                width: 40px;
+                height: 40px;
+                border: 1px solid black;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 3%;
+
+
+            }
+
+            .SVGgroup {
+                display: flex;
+
+            }
+
+            .contactus_info {
+                margin-right: 50%;
+                margin-top: 24px;
+            }
+            .contact_lan{
+                margin-top: 24px;
+            }
+
+            .links {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 24px;
+            }
+            .pc_links{
+                display: none;
+            }
+
+            .links img {
+                width: 18px;
+                height: 10px;
+            }
+
+            .botton_img {
+                text-align: center;
+            }
+
+            .botton_img img {
+                width: 200px;
+                height: 35px;
+
+            }
+
+            footer {
+                background-color: #1a1a1a;
+                color: white;
+                font-size: 12px;
+                padding: 5%;
+
+            }
+
+            footer a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .footercontract {
+                margin: 3% 0;
+            }
+
+            .footercontract_border {
+                border-right: 1px solid white;
+                padding: 0 10px;
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container ">
+            <div class="logo w_3333">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="login w_3333">
+                <div class="login_img">
+                    <img src="./images/signin.png" alt="">
+                </div>
+                <div class="login_img">
+                    <img src="./images/heart.png" alt="">
+                </div>
+                <div class="login_img">
+                    <img src="./images/calendar.png" alt="">
+                </div>
+                <div class="hamburger w_3333">三</div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="promotion">
+        <div class="container">
+            <div class="title">
+                <div class="title_eng01">
+                    <h2>PROMOTION</h2>
+                </div>
+                <div class="title_eng02">
+                    <h2 class="title_eng02h2">PROMOTION</h2>
+                </div>
+                <div class="title_cn">
+                    <p class="transform">推</p>
+                    <p class="transform">薦</p>
+                    <p class="transform">節</p>
+                    <p class="transform">目</p>
+                </div>
+            </div>
+        </div>
+        <div class="promotion_content">
+            <div class="banner">
+            </div>
+            <div class="promotion_info">
+                <div class="button_left">
+                    <img src="./images/button.png" alt="">
+                </div>
+                <div class="promotionbox_position">
+                    <div class="promotionbox">
+                        <a href="">
+                            <div class="promotionbox_text">
+                                <span>2022/04/29-2022/04/30</span>
+                                <h3>2022TIFA 史蒂芬妮．雷克《群像》</h3>
+                            </div>
+                        </a>
+                        <div class="seemore">
+                            <svg viewBox="0 0 40 35" fill="transparent" stroke-width="1.5px" stroke="#1a1a1a">
+                                <title>箭頭</title>
+                                <path
+                                    d="M2,13.9167098 L2,19.9610259 L27.1189899,19.9610259 L19.2254242,28.55442 L23.2996923,33 L38,17.00059 L23.3000082,1 L19.2252182,5.43915313 L27.0103247,13.9167098 L2,13.9167098 Z">
+                                </path>
+                                <path
+                                    d="M2,13.9167098 L2,19.9610259 L27.1189899,19.9610259 L19.2254242,28.55442 L23.2996923,33 L38,17.00059 L23.3000082,1 L19.2252182,5.43915313 L27.0103247,13.9167098 L2,13.9167098 Z">
+                                </path>
+
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="button_right">
+                    <img src="./images/button.png" alt="">
+                </div>
+            </div>
+            <div class="promotion_linksbox">
+                <div class="promotion_links">
+                    <a href="#">2022新點子實驗場：洪于雯《聲妖錄》</a>
+
+                </div>
+                <div class="promotion_links">
+                    <a href="#">2022新點子實驗場：黃鼎云《操演瘋狂》</a>
+                </div>
+                <div class="promotion_links">
+                    <a href="#">2022新點子實驗場：陳履歡《困獸》</a>
+                </div>
+                <div class="promotion_links">
+                    <a href="#">2022新點子實驗場：三個人《催化效應—融·共感》</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="membership">
+        <div class="container">
+            <div class="title">
+                <div class="title_eng01">
+                    <h2>MEMEBERSHIP</h2>
+                </div>
+                <div class="title_eng02">
+                    <h2 class="title_eng02h2">MEMEBERSHIP</h2>
+                </div>
+            </div>
+            <div class="content">
+                <div class="imgbox">
+                    <div class="backimg">
+
+                    </div>
+
+                    <div class="buttonleft">
+                        <a class="membership_buttonleft" href="">優先選位</a>
+                    </div>
+                    <div class="buttontop">
+                        <a class="membership_buttontop" href="">購票優惠</a>
+                    </div>
+                    <div class="buttonright">
+                        <a class="membership_buttonright" href="">生日禮券</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="joinnow">
+                <a href="">JOIN NOW</a>
+                <a href="">JOIN NOW</a>
+                <a href="">JOIN NOW</a>
+                <a href="">JOIN NOW</a>
+                <a href="">JOIN NOW</a>
+                <a href="">JOIN NOW</a>
+                <a href="">JOIN NOW</a>
+                <a href="">JOIN NOW</a>
+                <a href="">JOIN NOW</a>
+                <a href="">JOIN NOW</a>
+                
+
+
+            </div>
+            <div class="membership_text">
+                <h3>成為兩廳院會員　玩美你的藝術生活</h3>
+                <p>喜歡喜歡藝術的你！
+                    加入會員，搶先購買兩廳院主辦的精彩節目，還有眾多專屬優惠折扣享不完，玩美藝術生活只要200元起！</p>
+                <div class="membership_text_seemore">
+                    <div class="membership_text_svg">
+                        <svg viewBox="0 0 40 35" fill="transparent" stroke-width="1.5px" stroke="#1a1a1a">
+                            <title>箭頭</title>
+                            <path
+                                d="M2,13.9167098 L2,19.9610259 L27.1189899,19.9610259 L19.2254242,28.55442 L23.2996923,33 L38,17.00059 L23.3000082,1 L19.2252182,5.43915313 L27.0103247,13.9167098 L2,13.9167098 Z">
+                            </path>
+                            <path
+                                d="M2,13.9167098 L2,19.9610259 L27.1189899,19.9610259 L19.2254242,28.55442 L23.2996923,33 L38,17.00059 L23.3000082,1 L19.2252182,5.43915313 L27.0103247,13.9167098 L2,13.9167098 Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="programs">
+        <div class="programs_bck">
+
+        </div>
+
+        <div class="container">
+
+            <div class="title">
+                <div class="title_eng01">
+                    <h2>PROGRAMS</h2>
+                </div>
+                <div class="title_eng02">
+                    <h2 class="title_eng02h2">PROGRAMS</h2>
+                </div>
+                <div class="title_cn">
+                    <h2>主合辦節目</h2>
+                </div>
+
+            </div>
+            <div class="content">
+                <div class="card">
+                    <figure class=programs_pic>
+                        <img class="programs_img" src="./images/907fc5efa04a49da9594225401be37f41b0c0d74.jpeg" alt="">
+                        <div class="btn_heart">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </figure>
+                    <div class="card_text">
+                        <div class="schedule margin_top">
+                            <p>2022/04/09-2022/05/15</p>
+                        </div>
+                        <div class="program_name margin_top">
+                            <h3>2022TIFA 惡童劇團《福爾摩斯辦案：國會殺人事件》（線上互動）</h3>
+                        </div>
+                        <div class="program_festival margin_top">
+                            <p>戲劇
+                            <div class="program_festival_button"><a href="#">台灣藝術節(TIFA)</a></div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class=programs_pic>
+                        <img class="programs_img" src="./images/907fc5efa04a49da9594225401be37f41b0c0d74.jpeg" alt="">
+                        <div class="btn_heart">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </figure>
+                    <div class="card_text">
+                        <div class="schedule margin_top">
+                            <p>2022/04/09-2022/05/15</p>
+                        </div>
+                        <div class="program_name margin_top">
+                            <h3>2022TIFA 惡童劇團《福爾摩斯辦案：國會殺人事件》（線上互動）</h3>
+                        </div>
+                        <div class="program_festival margin_top">
+                            <p>戲劇
+                            <div class="program_festival_button"><a href="#">台灣藝術節(TIFA)</a></div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class=programs_pic>
+                        <img class="programs_img" src="./images/907fc5efa04a49da9594225401be37f41b0c0d74.jpeg" alt="">
+                        <div class="btn_heart">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </figure>
+                    <div class="card_text">
+                        <div class="schedule margin_top">
+                            <p>2022/04/09-2022/05/15</p>
+                        </div>
+                        <div class="program_name margin_top">
+                            <h3>2022TIFA 惡童劇團《福爾摩斯辦案：國會殺人事件》（線上互動）</h3>
+                        </div>
+                        <div class="program_festival margin_top">
+                            <p>戲劇
+                            <div class="program_festival_button"><a href="#">台灣藝術節(TIFA)</a></div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class=programs_pic>
+                        <img class="programs_img" src="./images/907fc5efa04a49da9594225401be37f41b0c0d74.jpeg" alt="">
+                        <div class="btn_heart">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </figure>
+                    <div class="card_text">
+                        <div class="schedule margin_top">
+                            <p>2022/04/09-2022/05/15</p>
+                        </div>
+                        <div class="program_name margin_top">
+                            <h3>2022TIFA 惡童劇團《福爾摩斯辦案：國會殺人事件》（線上互動）</h3>
+                        </div>
+                        <div class="program_festival margin_top">
+                            <p>戲劇
+                            <div class="program_festival_button"><a href="#">台灣藝術節(TIFA)</a></div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class=programs_pic>
+                        <img class="programs_img" src="./images/907fc5efa04a49da9594225401be37f41b0c0d74.jpeg" alt="">
+                        <div class="btn_heart">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </figure>
+                    <div class="card_text">
+                        <div class="schedule margin_top">
+                            <p>2022/04/09-2022/05/15</p>
+                        </div>
+                        <div class="program_name margin_top">
+                            <h3>2022TIFA 惡童劇團《福爾摩斯辦案：國會殺人事件》（線上互動）</h3>
+                        </div>
+                        <div class="program_festival margin_top">
+                            <p>戲劇
+                            <div class="program_festival_button"><a href="#">台灣藝術節(TIFA)</a></div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class=programs_pic>
+                        <img class="programs_img" src="./images/907fc5efa04a49da9594225401be37f41b0c0d74.jpeg" alt="">
+                        <div class="btn_heart">
+                            <img src="./images/heart.png" alt="">
+                        </div>
+                    </figure>
+                    <div class="card_text">
+                        <div class="schedule margin_top">
+                            <p>2022/04/09-2022/05/15</p>
+                        </div>
+                        <div class="program_name margin_top">
+                            <h3>2022TIFA 惡童劇團《福爾摩斯辦案：國會殺人事件》（線上互動）</h3>
+                        </div>
+                        <div class="program_festival margin_top">
+                            <p>戲劇
+                            <div class="program_festival_button"><a href="#">台灣藝術節(TIFA)</a></div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="program_more margin_top">
+                    <div class="program_morebox">
+                        <h3>查看更多節目</h3>
+                        <div class="program_seemore">
+                            <svg viewBox="0 0 40 35" fill="transparent" stroke-width="1.5px" stroke="#1a1a1a">
+                                <title>箭頭</title>
+                                <path
+                                    d="M2,13.9167098 L2,19.9610259 L27.1189899,19.9610259 L19.2254242,28.55442 L23.2996923,33 L38,17.00059 L23.3000082,1 L19.2252182,5.43915313 L27.0103247,13.9167098 L2,13.9167098 Z">
+                                </path>
+                                <path
+                                    d="M2,13.9167098 L2,19.9610259 L27.1189899,19.9610259 L19.2254242,28.55442 L23.2996923,33 L38,17.00059 L23.3000082,1 L19.2252182,5.43915313 L27.0103247,13.9167098 L2,13.9167098 Z">
+                                </path>
+
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shows margin_top">
+        <div class="container">
+            <div class="shows_imgbox"><img src="./images/92e08b21a28b73c0f6edcaa23397ef5b38d24fef.jpeg" alt=""></div>
+            <div class="shows_imgbox"><img src="./images/show02.jpeg" alt=""></div>
+
+        </div>
+    </div>
+    <div class="contact margin_top">
+        <div class="container">
+            <div class="contact_up_flex">
+                <div class="digitalpaper">
+                    <h4>訂閱電子報</h4>
+                    <div class="digitakpaper_mail">
+                        <label for="digitalpaper_mailad"></label>
+                        <input type="text" id="digitalpaper_mailad" name="digitalpaper_mailad"
+                            placeholder="address@mail.com">
+                        <button>送出</button>
+                    </div>
+                </div>
+                <div class="contactinfo_flexbox">
+                    <div class="SNS">
+                        <div class="SVGborder">
+                            <svg width="8" height="16" viewBox="0 0 8 16" class="css-1xtal6s">
+                                <title>Facebook</title>
+                                <path
+                                    d="M5 5.5L5 3.6C5 3 5.4 2.6 6 2.6L7 2.6 7 0.1 5 0.1C3.4 0.1 2 1.5 2 3.1L2 5.5 0.1 5.5 0.1 8 2 8 2 15.9 5 15.9 5 8 7 8 7.9 5.5 5 5.5Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="SVGborder">
+                            <svg width="16" height="13" viewBox="0 0 16 13" class="css-1xtal6s">
+                                <title>Youtube</title>
+                                <path
+                                    d="M12.7 0.7L3.3 0.7C1.5 0.7 0 2.2 0 4.2L0 9.1C0 11.1 1.5 12.7 3.3 12.7L12.7 12.7C14.5 12.7 16 11.1 16 9.1L16 4.2C16 2.2 14.5 0.7 12.7 0.7M10.4 6.9L6 9.1C5.9 9.2 5.8 9.1 5.8 9L5.8 4.4C5.8 4.3 5.9 4.2 6.1 4.2L10.4 6.6C10.6 6.7 10.6 6.9 10.4 6.9">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="SVGborder">
+                            <svg width="24" height="15" viewBox="0 0 24 15" class="css-1xtal6s">
+                                <title>Trip Advisor</title>
+                                <path
+                                    d="M4.99764267,2.63902998 C9.22606817,-0.213009993 14.784142,-0.213009993 19.0125945,2.63902998 L19.0125945,2.63902998 L23,2.63951181 L21.2012229,4.57886472 C22.3450349,5.61026855 22.9960834,7.0721311 22.9942466,8.60455451 C22.9942466,11.6131347 20.5311855,14.0518743 17.4953811,14.0518743 C16.110306,14.0537213 14.7758766,13.5352221 13.7610967,12.6011473 L13.7610967,12.6011473 L12,14.5 L10.2377959,12.5994609 C9.22277281,13.5343655 7.88788429,14.0531592 6.50216089,14.0513657 C3.46665357,14.0513657 1.00567233,11.612519 1.00567233,8.60404591 C1.00383558,7.07164927 1.65496513,5.60970642 2.79866909,4.5783829 L2.79866909,4.5783829 L1,2.63902998 Z M17.4954891,4.91788342 C15.4415111,4.91788342 13.7761688,6.56757812 13.7754123,8.60305549 C13.7747643,10.6390147 15.4395393,12.2902084 17.4940305,12.2909313 C19.5485218,12.2915736 21.2146474,10.641745 21.2153767,8.60567877 L21.2153767,8.60567877 C21.2152956,6.56822056 19.5498723,4.91788342 17.4954891,4.91788342 Z M6.50216089,4.91753544 C4.44766968,4.91753544 2.78219232,6.56803318 2.78219232,8.60404591 C2.78219232,10.6400586 4.44766968,12.2905564 6.50216089,12.2905564 C8.5566521,12.2905564 10.2221295,10.6400586 10.2221295,8.60404591 C10.2221295,6.56805995 8.5566521,4.91753544 6.50216089,4.91753544 Z M6.49178052,6.65683119 C7.5707929,6.65683119 8.44549332,7.52366439 8.44549332,8.59297192 C8.44549332,9.66225269 7.5707929,10.5291127 6.49178052,10.5291127 C5.41276815,10.5291127 4.53806772,9.66225269 4.53806772,8.59297192 C4.53806772,7.52366439 5.41276815,6.65683119 6.49178052,6.65683119 Z M17.5061477,6.65693558 C18.5850521,6.65709619 19.4595094,7.52392939 19.4593743,8.59307632 C19.4593743,9.66238386 18.5845659,10.5292171 17.5056615,10.5292171 C16.4266492,10.5292171 15.5519487,9.66238386 15.5519487,8.59307632 C15.5519487,7.52376878 16.4266492,6.65693558 17.5056615,6.65693558 L17.5056615,6.65693558 Z M16.1277551,3.10104836 C13.4857455,2.01016569 10.5134442,2.01016569 7.8713535,3.10104836 C10.2194283,3.99108955 12,6.07271522 12,8.49860614 C12,6.0723137 13.7800314,3.99082187 16.1277551,3.10104836 Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contactus">
+                        <div class="contactus_info">
+                            <p>聯絡我們</p>
+                            <div class="SVGgroup">
+                                <div class="SVGborder">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" class="css-1xtal6s">
+                                        <title>電話</title>
+                                        <path
+                                            d="M1 0.6C1.3 0.4 1.6 0.2 1.9 0 2.1 0 2.4 0 2.6 0.1 2.7 0.2 2.8 0.2 2.9 0.3L5.1 2.5C5.5 2.9 5.5 3.6 5.1 4L4.1 5C4 5.1 4 5.1 3.9 5.2 4.5 6.1 5.2 7.1 6.1 7.9 6.9 8.8 7.9 9.5 8.8 10.1 8.9 10 8.9 10 9 9.9L10 8.9C10.4 8.5 11.1 8.5 11.5 8.9L13.7 11.1C13.8 11.2 13.8 11.3 13.9 11.4 14 11.6 14 11.9 14 12.1 13.8 12.4 13.6 12.7 13.4 13 12.7 13.7 11.7 14 10.6 14 8.5 14 5.8 12.8 3.5 10.5 1.2 8.2 0 5.5 0 3.4 0 2.3 0.3 1.3 1 0.6">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="SVGborder">
+                                    <svg width="16" height="10" viewBox="0 0 16 10" class="css-1xtal6s">
+                                        <title>信件</title>
+                                        <path
+                                            d="M16 1L16 9C16 9.6 15.6 10 15 10L1 10C0.4 10 0 9.6 0 9L0 1C0 0.7 0.1 0.5 0.3 0.3L8 7 15.7 0.3C15.9 0.5 16 0.7 16 1ZM14.1 0L8 5.4 1.9 0 14.1 0Z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact_lan">
+                            <p>節目語音</p>
+                            <div class="SVGborder">
+                                <svg width="40" height="40" viewBox="0 0 40 40" class="css-1xtal6s">
+                                    <title>聲音</title>
+                                    <path
+                                        d="M20,17 C21.105644,17 22,16.1041968 22,15 C22,13.8958032 21.105644,13 20,13 C18.8958032,13 18,13.8958032 18,15 C18,16.1041968 18.8958032,17 20,17 Z M22,27 L21.6616022,18.4 L18.339779,18.4 L18,27 L22,27 Z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="links ">
+                <p>相關連結</p>
+                <img src="./images/button.png" alt="">
+            </div>
+            <div class="pclinks_position">
+                <div class="pc_links">
+                    <a href="#">國家表演藝術中心</a>
+                    <a href="#">場館設施服務系統</a>
+                    <a href="#">兩廳院售票</a>
+                    <a href="#">藝文指南針</a>
+                    <a href="#">PAR 表演藝術</a>
+                    <a href="#">好藝網</a>
+                    <a href="#">場地租用</a>
+                    <a href="#">OPENTIX 兩廳院文化生活</a>
+                    <a href="#">遺失物中心</a>
+                    <a href="#">公告與招標</a>
+                </div>
+            </div>
+            <div class="botton_img margin_top">
+                <div class="container">
+                    <img src="./images/1e5e29954fed99c6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="margin_top">
+        <div class="container text_align_center">
+            <div class="footer_flex_left">
+                <p>100012 臺北市中山南路21-1號</p>
+                <div class="footercontract">
+                    <a class="footercontract_border" href="#">隱私權說明</a>
+                    <a href="#">服務及授權條款</a>
+                </div>
+            </div>
+            <div class="copyright ">
+                <p>&copy;國家表演藝術中心 - 國家兩廳院</p>
+                <p>National Theater & Concert Hall. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
