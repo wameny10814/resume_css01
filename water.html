@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        width: 100px;
+        height: 100vh;
+  margin: 0;
+  padding: 0;
+
+
+  text-transform: uppercase;
+    }
+    ul{
+        list-style: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        color: royalblue;
+        font-size: 1rem;
+        transition: 0.5s;
+        font-weight: 400;
+    }
+    li:hover{
+   
+        transform: scale(1.5,1.3);
+        transform-origin: left;
+        color: royalblue;
+        z-index: 4;
+    }
+    li:has(+ li:hover),
+    li:hover + li {
+    transform: scale(1.4,1.2);
+    transform-origin: left;
+    color: royalblue;
+    z-index: 3;
+    }
+
+   li:has(+li + li:hover),
+   li:hover + li +li {
+   transform: scale(1.3,1.1);
+   transform-origin: left;
+   color: royalblue;
+   z-index: 2;
+   }
+
+   li:has(li +li + li:hover),
+   li:hover + li +li +li {
+   transform: scale(1.2,1);
+   transform-origin: left;
+   color: royalblue;
+   z-index: 1;
+   }
+
+</style>
+<body>
+    <ul>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+        <li>water</li>
+    </ul>
+</body>
+</html>
